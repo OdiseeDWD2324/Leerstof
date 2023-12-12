@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link rel="stylesheet" href="style.css"> 
+    </head>
+    <body>
+
+        <h1 id="header1">GetElementById</h1>
+        <div id="div">
+            <p> test test</p>
+            <p> test2 test2</p>
+        </div>
+        <p>Om een element met een specifiek id te selecteren</p>
+
+        <label for="leeftijd">Leeftijd:</label>
+        <input id="leeftijd" type="number" value="47"/>
+
+        <h1>QuerySelector (All)</h1>
+
+        <p> Selecteer het eerste element dat aan een css selector voldoet</p>
+        <ul>
+            <li>eerste</li>
+            <li class="benadrukt">tweede</li>
+            <li class="benadrukt">derde</li>
+        </ul>
+
+        <h1>Events</h1>
+
+        <button id="clickFunctionButton" class="btn">Click function</button>
+        <button id="clickAnonymousButton" class="btn">Click anonymous function</button>
+        <button id="clickArrowButton" class="btn">Click arrow function</button>
+
+        <h1>UseCapture</h1>
+
+        <div id="outer-div">
+        <div id="inner-div">
+            <button class="btn" id="button">test</button>
+        </div>
+        </div>
+        
+        <h1>RemoveEventListener</h1>
+
+        <button class="btn" id="click-btn">click</button>
+        <button class="btn" id="add-btn">add Event</button>
+        <button class="btn" id="remove-btn">remove Event</button>
+
+        <h1>createElement, append, prepend en remove</h1>
+
+        <p>Met createElement kan je een element aanmaken. Dat element zit nog niet in het DOM. Met append en prepend kan je elementen toevoegen aan het DOM.</p>
+
+        <p>Klik op een paragraaf om deze te verwijderen</p>
+
+        <button id="knop-append" class="btn">Append</button>
+        <button id="knop-prepend" class="btn">Prepend</button>
+
+        <div>
+        <div id="prullenbak"></div>
+        <div id="output"></div>
+    </div>
+
+        <script src="index.js"></script>
+    </body>
+</html>

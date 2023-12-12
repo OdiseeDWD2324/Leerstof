@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap");
+
+:root {
+  /* kleuren */
+  --nachtblauw: #1f416b;
+  --helderwit: #fff;
+  --printerzwart: #181716;
+  --mistblauw: #d3ddf2;
+  --muntgroen: #3cb497;
+  --stormblauw: #00639c;
+  --warmrood: #e73f16;
+  /* achtergronden / logo */
+  --urlLogo: url("https://huisstijl2.odisee.be/sites/files/content/odisee_2019_nachtblauw_rgb.jpg");
+  /* fontsizes */
+  --normaal: 400;
+  --groter: 600;
+  --groot: 700;
+}
+body {
+  background-color: #fff;
+  background-image: var(--urlLogo);
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-size: 200px;
+  color: var(--nachtblauw);
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: var(--normaal);
+  margin: 1em;
+}
+
+h1 {
+  color: var(--warmrood);
+  font-weight: var(--groot);
+}
+
+h2 {
+  color: var(--muntgroen);
+  font-weight: var(--groter);
+}
+input {
+  padding: 0.25em;
+}
+.benadrukt {
+  color: var(--muntgroen);
+}
+.btn {
+  margin-right: 1em;
+}
