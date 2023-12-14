@@ -46,3 +46,16 @@ input {
 .btn {
   margin-right: 1em;
 }
+
+
+form#loginForm.required {
+  background-color: yellow;
+}
+
+form#loginForm.disabled {
+  background-color:grey;
+}
+
+form#loginForm.invalid {
+  background-color: red;
+}

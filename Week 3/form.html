@@ -15,16 +15,54 @@
   <ul id="errors">
 
   </ul>
+
+  <!--
+    validatie met html attributen
+      minlength - maxlength om het aantal karakters in een string te bepalen
+      required - deze velden zijn verplicht
+      min-max bij number inputs
+      pattern - lijkt de gegeven tekst op het pattroon dat hierin staat
+              - dit werkt met reguliere expressies
+              - er zijn een aantal speciale tekens
+                  .     een willekeurige teken
+                  ?     het teken ervoor staat 0 of 1 keer
+                  +     het teken ervoor staat er 1 of meer keer
+                  *     het teken ervoor staat er 0 of meer keer
+                  \     slash voor een speciaal teken wil zeggen, dit is het teken en niet de speciale betekenis
+  -->
   
   <form id="loginForm" action="form2.html" method="get" autocomplete="off" novalidate>
-	<label for="username">Username</label>
-    <input type="text" name="username" id="username" value="Jens"><br>
+	  <label for="username">Username</label>
+    <!-- de for is gelinked met het id, best practice: geef id en name dezelfde naam-->
+    <input type="text" name="username" id="username" value="Jens" minlength="3" maxlength="5"><br>
 
     <label for="password">Password</label>
-    <input type="password" name="password" id="password" disabled><br>
+    <input type="password" name="password" id="password" required><br>
+
+    <label for="birthdate">Birthdate</label>
+    <input type="date" name="birthdate" id="birthdate"><br>
+
+    <label for="age">Age</label>
+    <input type="number" name="age" id="age" min="0" max="150"><br>
+
+    <label for="email">Email</label>
+    <input type="text" name="email" id="email" pattern="[a-z]+@student\.odisee\.be"><br>
+
+    <!--Dit is een speciaal geval, naam wordt gebruikt om een groep van te maken, van alle radios met dezelfde naam mag er maar 1 aangevinkt zijn-->
+    <input type="radio" name="radio_naam" id="radio1">
+    <label for="radio1">radio1</label><br>
+    <input type="radio" name="radio_naam" id="radio2">
+    <label for="radio2">radio2</label><br>
+
+    <label for="select">Select</label>
+    <select name="select" id="select">
+        <option value="1">optie 1</option>
+        <option value="2">optie 2</option>
+    </select><br>
 	
     <button type="submit" id="sendbtn">Send</button>
   </form>
+
   <script src="form.js"></script>
 </body>
 
