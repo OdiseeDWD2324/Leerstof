@@ -1,0 +1,12 @@
+.checked {
+  text-decoration: line-through;
+}
+
+#items li.checked {
+  list-style: "☑" ;
+}
+
+#items li {
+  list-style: "\1F7E6";
+  padding-left: 1em;
+}
