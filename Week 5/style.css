@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  #pokemon-list{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  #pokemon-list div{
+    width: 24vw;
+    height: 200px;
+  }
+  
+  #pokemon-list div img {
+    width: 100%;
+    height: 100%;
+  }
